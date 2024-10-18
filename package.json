@@ -1,18 +1,23 @@
 {
   "name": "cybr",
-  "version": "0.0.1",
+  "description": 'clone a repository into a newly created directory',
+  "version": "0.0.2",
   "module": "index.ts",
   "type": "module",
   "bin": {
     "cybr": "./dist/index.js"
   },
   "scripts": {
-     "prePublish": "bun build index.ts --outdir dist --minify"
+    "prePublish": "bun build index.ts --outdir dist --minify"
   },
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "figlet": "^1.8.0"
   }
 }
