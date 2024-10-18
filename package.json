@@ -1,14 +1,16 @@
 {
   "name": "cybr",
-  "description": 'clone a repository into a newly created directory',
-  "version": "0.0.2",
+  "description": "cybr a repository into a newly created directory",
+  "version": "0.0.3",
+  "license": "MIT",
+  "private": false,
   "module": "index.ts",
   "type": "module",
   "bin": {
     "cybr": "./dist/index.js"
   },
   "scripts": {
-    "prePublish": "bun build index.ts --outdir dist --minify"
+    "prePublish": "bun build index.ts --outdir dist"
   },
   "devDependencies": {
     "@types/bun": "latest"
@@ -17,7 +19,6 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "commander": "^12.1.0",
-    "figlet": "^1.8.0"
+    "commander": "^12.1.0"
   }
 }
